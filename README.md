@@ -87,7 +87,7 @@ Add an Item to the Order
     + Body
             {
               "barcode": "9780201896831",
-              "quantity" : 1
+              "quantity" : 2
             }
 
 + Response 200 (application/json)
