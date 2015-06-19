@@ -6,9 +6,7 @@ This app allows you to look up a barcode by UPC id. It returns information on th
 
 # Recent Searches [/barcode/recent]
 
-List recent searches
-
-## [GET]
+## List recent searches [GET]
 
 + Response 200 (application/json)
     + Body
