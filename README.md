@@ -84,10 +84,6 @@ This app allows you to look up a barcode by UPC id. It returns information on th
 
 ## Add Order [POST]
 
-'Add Orders' endpoint.
-
-## [POST]
-
 'Add Item' endpoint.
 
 + Request (application/json)
