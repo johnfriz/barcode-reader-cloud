@@ -2,7 +2,7 @@
 
 This app allows you to look up a barcode by UPC id. It returns information on the barcode including a base64 encoded image of the product. You can also place orders for the items represented by the barcodes.
 
-# Group Barcode API
+# Group APIs
 
 # Recent Searches [/barcode/recent]
 
@@ -41,8 +41,6 @@ Read a Barcode by barcode number
     + Body
             {"Invalid Barcode Id"}
 
-
-# Group Orders API
 
 # List Orders [/orders]
 
