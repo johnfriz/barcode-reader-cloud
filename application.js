@@ -25,7 +25,8 @@ app.use(express.static(__dirname + '/public'));
 app.use(mbaasExpress.fhmiddleware());
 
 // fhlint-begin: custom-routes
-app.use('/hello', require('./lib/hello.js')());
+app.use('/barcode', require('./mock/barcode.js')());
+app.use('/orders', require('./mock/orders.js')());
 // fhlint-end
 
 // Important that this is last!
@@ -34,5 +35,5 @@ app.use(mbaasExpress.errorHandler());
 var port = process.env.FH_PORT || process.env.OPENSHIFT_NODEJS_PORT || 8001;
 var host = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 var server = app.listen(port, host, function() {
-  console.log("App started at: " + new Date() + " on port: " + port); 
+  console.log("App started at: " + new Date() + " on port: " + port);
 });
