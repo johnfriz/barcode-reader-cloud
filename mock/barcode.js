@@ -13,7 +13,7 @@ function barcodeRoute() {
   });
 
   barcode.all('/read', function(req, res) {
-    var barcode = req.query.barcode || req.body.barcode;
+    var barcodeId = req.query.barcode || req.body.barcode;
     console.log('barcode = ', barcodeId)
     if(barcodeId === "error") {
       return res.status(400).json({"error":"Invalid Barcode Id"});
