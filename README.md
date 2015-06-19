@@ -6,11 +6,9 @@ This app allows you to look up a barcode by UPC id. It returns information on th
 
 # Recent Searches [/barcode/recent]
 
-'List recent searches' endpoint.
+List recent searches
 
-## barcode/recent [GET]
-
-'List recent searches' endpoint.
+## [GET]
 
 + Response 200 (application/json)
     + Body
@@ -19,9 +17,9 @@ This app allows you to look up a barcode by UPC id. It returns information on th
 
 # Read Barcode [/barcode/read]
 
-'Read Barcode' endpoint.
+Read Barcode
 
-## barcode/read [POST]
+## [GET]
 
 'Read Barcode' endpoint.
 
@@ -48,9 +46,11 @@ This app allows you to look up a barcode by UPC id. It returns information on th
 
 # Group Orders API
 
-# Manage Orders [/orders]
+# List Orders [/orders]
 
-## List Orders [GET]
+List current order items
+
+## [GET]
 
 'List orders' endpoint.
 
@@ -82,9 +82,12 @@ This app allows you to look up a barcode by UPC id. It returns information on th
       "total" : "149.49";
     }
 
-## Add Order [POST]
+# Add Order [/orders]
 
-'Add Item' endpoint.
+Add an Item to the Order
+
+## [POST]
+
 
 + Request (application/json)
     + Body
@@ -106,11 +109,11 @@ This app allows you to look up a barcode by UPC id. It returns information on th
     + Body
             {"Invalid Barcode Id"}
 
-# Manage Orders [/orders/{id}]
+# Update Order [/orders/{id}]
 
-## [PUT]
+Update Item Quantity
 
-'Update Item Quantity' endpoint.
+##  [PUT]
 
 + Request (application/json)
     + Body
@@ -133,9 +136,11 @@ This app allows you to look up a barcode by UPC id. It returns information on th
             {"Invalid Order Id"}
 
 
+# Remove Order [/orders/{id}]
+
 ## [DELETE]
 
-'Remove Order' endpoint.
+Remove an Item from the Order
 
 + Request (application/json)
     + Body
