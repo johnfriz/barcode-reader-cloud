@@ -6,7 +6,9 @@ This app allows you to look up a barcode by UPC id. It returns information on th
 
 # Recent Searches [/barcode/recent]
 
-## List recent searches [GET]
+## /barcode/recent [GET]
+
+List recent searches
 
 + Response 200 (application/json)
     + Body
@@ -15,11 +17,9 @@ This app allows you to look up a barcode by UPC id. It returns information on th
 
 # Read Barcode [/barcode/read]
 
-Read Barcode
+## /barcode/read [GET]
 
-## [GET]
-
-'Read Barcode' endpoint.
+Read a Barcode by barcode number
 
 + Request (application/json)
     + Body
@@ -46,11 +46,9 @@ Read Barcode
 
 # List Orders [/orders]
 
+## /orders [GET]
+
 List current order items
-
-## [GET]
-
-'List orders' endpoint.
 
 + Response 200 (application/json)
     + Body
@@ -82,9 +80,9 @@ List current order items
 
 # Add Order [/orders]
 
-Add an Item to the Order
+## /orders [POST]
 
-## [POST]
+Add an Item to the Order
 
 
 + Request (application/json)
@@ -109,9 +107,9 @@ Add an Item to the Order
 
 # Update Order [/orders/{id}]
 
-Update Item Quantity
+## /orders/{id} [PUT]
 
-##  [PUT]
+Update Item Quantity
 
 + Request (application/json)
     + Body
@@ -136,7 +134,7 @@ Update Item Quantity
 
 # Remove Order [/orders/{id}]
 
-## [DELETE]
+## /orders/{id} [DELETE]
 
 Remove an Item from the Order
 
