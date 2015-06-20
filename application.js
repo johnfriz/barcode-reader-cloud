@@ -26,7 +26,7 @@ app.use(mbaasExpress.fhmiddleware());
 
 // fhlint-begin: custom-routes
 app.use('/barcode', require('./lib/barcode.js')());
-app.use('/orders', require('./mock/orders.js')());
+app.use('/orders', require('./lib/orders.js')());
 // fhlint-end
 
 // Important that this is last!
