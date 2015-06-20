@@ -25,7 +25,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(mbaasExpress.fhmiddleware());
 
 // fhlint-begin: custom-routes
-app.use('/barcode', require('./mock/barcode.js')());
+app.use('/barcode', require('./lib/barcode.js')());
 app.use('/orders', require('./mock/orders.js')());
 // fhlint-end
 

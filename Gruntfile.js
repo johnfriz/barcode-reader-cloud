@@ -55,8 +55,9 @@ module.exports = function(grunt) {
            * or a remote instance.
            */
           var serviceMap = {
-            'SERVICE_GUID_1': 'http://127.0.0.1:8010',
-            'SERVICE_GUID_2': 'https://host-and-path-to-service'
+            'xw5w5fsmgfcz7vlpfo72edpy': 'https://testing-xw5w5fsmgfcz7vlpfo72edpy-dev.mbaas1.us.feedhenry.com/',
+            'ifwsei3d5hjvkwrimed5tmxs': 'https://testing-ifwsei3d5hjvkwrimed5tmxs-dev.mbaas1.us.feedhenry.com/',
+            'u2hzmq3yac46v5cmacwacjqx': 'https://testing-u2hzmq3yac46v5cmacwacjqx-dev.mbaas1.us.feedhenry.com/'
           };
           return JSON.stringify(serviceMap);
         }
