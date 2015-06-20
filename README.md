@@ -55,20 +55,14 @@ List current order items
         {
           "id": "6367c48dd193d56ea7b0baad25b19455e529f5ee",
           "barcode": "7622210141132",
-          "productname": "Cadbury Wispa Gold Hot Chocolate Drink",
-          "imagebase64": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEB..."
           "price": "11.59",
-          "currency": "USD"
           "quantity": "1",
           "total": "11.59"
         },
         {
           "id": "a0312f777960e1dae7d3d0c8df6f0b43f91352d5",
           "barcode": "886742322705",
-          "productname": "Lucky Women's Fastt Gladiator Sandal, Black, 6.5 M US",
-          "imageurl": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQF...",
           "price": "68.95",
-          "currency": "USD",
           "quantity": "2",
           "total": "137.90"
         }
@@ -87,6 +81,7 @@ Add an Item to the Order
     + Body
             {
               "barcode": "9780201896831",
+              "price": "68.95",
               "quantity" : 2
             }
 
@@ -95,6 +90,7 @@ Add an Item to the Order
             {
               "id": "a0312f777960e1dae7d3d0c8df6f0b43f91352d5",
               "barcode": "9780201896831",
+              "price": "68.95",
               "quantity": "2",
               "total": "137.90"
             }
