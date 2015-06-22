@@ -54,11 +54,17 @@ module.exports = function(grunt) {
            * This can be a mapping to a locally running instance of the service (for local development)
            * or a remote instance.
            */
+          // var serviceMap = {
+          //   'xw5w5fsmgfcz7vlpfo72edpy': 'https://testing-xw5w5fsmgfcz7vlpfo72edpy-dev.mbaas1.us.feedhenry.com/',
+          //   'ifwsei3d5hjvkwrimed5tmxs': 'https://testing-ifwsei3d5hjvkwrimed5tmxs-dev.mbaas1.us.feedhenry.com/',
+          //   'u2hzmq3yac46v5cmacwacjqx': 'https://testing-u2hzmq3yac46v5cmacwacjqx-dev.mbaas1.us.feedhenry.com/'
+          // };
+
           var serviceMap = {
-            'xw5w5fsmgfcz7vlpfo72edpy': 'https://testing-xw5w5fsmgfcz7vlpfo72edpy-dev.mbaas1.us.feedhenry.com/',
-            'ifwsei3d5hjvkwrimed5tmxs': 'https://testing-ifwsei3d5hjvkwrimed5tmxs-dev.mbaas1.us.feedhenry.com/',
-            'u2hzmq3yac46v5cmacwacjqx': 'https://testing-u2hzmq3yac46v5cmacwacjqx-dev.mbaas1.us.feedhenry.com/'
-          };
+            'd5ds624szo43efphrj2y3em5': 'https://testing-d5ds624szo43efphrj2y3em5-dev.mbaas1.epsilon.feedhenry.com/',
+            'lyzdppxaaba3hhqskzqr5rv4': 'https://testing-lyzdppxaaba3hhqskzqr5rv4-dev.mbaas1.epsilon.feedhenry.com/',
+            'wjnooer3tajhmji5tdayzpgr': 'https://testing-wjnooer3tajhmji5tdayzpgr-dev.mbaas1.epsilon.feedhenry.com/'
+          }
           return JSON.stringify(serviceMap);
         }
       }
