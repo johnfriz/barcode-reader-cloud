@@ -17,7 +17,7 @@ List recent searches
 
 # Read Barcode [/barcode/read]
 
-## /barcode/read [GET]
+## /barcode/read [POST]
 
 Read a Barcode by barcode number
 
