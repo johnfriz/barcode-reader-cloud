@@ -60,11 +60,25 @@ module.exports = function(grunt) {
           //   'u2hzmq3yac46v5cmacwacjqx': 'https://testing-u2hzmq3yac46v5cmacwacjqx-dev.mbaas1.us.feedhenry.com/'
           // };
 
+          // var serviceMap = {
+          //   'd5ds624szo43efphrj2y3em5': 'https://testing-d5ds624szo43efphrj2y3em5-dev.mbaas1.epsilon.feedhenry.com/',
+          //   'lyzdppxaaba3hhqskzqr5rv4': 'https://testing-lyzdppxaaba3hhqskzqr5rv4-dev.mbaas1.epsilon.feedhenry.com/',
+          //   'wjnooer3tajhmji5tdayzpgr': 'https://testing-wjnooer3tajhmji5tdayzpgr-dev.mbaas1.epsilon.feedhenry.com/'
+          // }
+
+          // {
+          //   'barcode' : 'fo3inxdemphile6yn4ct7iqi',
+          //   'image' : 'r6n4x35cqq6qzcr77t6l2tbb',
+          //   'order' : '2g7stzwgjcfplrc4tgnf7ipa'
+          // }
+
           var serviceMap = {
-            'd5ds624szo43efphrj2y3em5': 'https://testing-d5ds624szo43efphrj2y3em5-dev.mbaas1.epsilon.feedhenry.com/',
-            'lyzdppxaaba3hhqskzqr5rv4': 'https://testing-lyzdppxaaba3hhqskzqr5rv4-dev.mbaas1.epsilon.feedhenry.com/',
-            'wjnooer3tajhmji5tdayzpgr': 'https://testing-wjnooer3tajhmji5tdayzpgr-dev.mbaas1.epsilon.feedhenry.com/'
+            'fo3inxdemphile6yn4ct7iqi': 'https://barcodemicroservopen7iqi.b5e6.rhm-eng-a.openshiftapps.com',
+            'r6n4x35cqq6qzcr77t6l2tbb': 'https://imagemicroservicopen2tbb.b5e6.rhm-eng-a.openshiftapps.com',
+            '2g7stzwgjcfplrc4tgnf7ipa': 'https://ordermicroservicopen7ipa.b5e6.rhm-eng-a.openshiftapps.com'
           }
+
+console.log('serviceMap = ', serviceMap);
           return JSON.stringify(serviceMap);
         }
       }
