@@ -72,8 +72,14 @@ module.exports = function(grunt) {
           //   'order' : '2g7stzwgjcfplrc4tgnf7ipa'
           // }
 
+          // var serviceMap = {
+          //   'fo3inxdemphile6yn4ct7iqi': 'https://barcodemicroservopen7iqi.b5e6.rhm-eng-a.openshiftapps.com',
+          //   'r6n4x35cqq6qzcr77t6l2tbb': 'https://imagemicroservicopen2tbb.b5e6.rhm-eng-a.openshiftapps.com',
+          //   '2g7stzwgjcfplrc4tgnf7ipa': 'https://ordermicroservicopen7ipa.b5e6.rhm-eng-a.openshiftapps.com'
+          // }
+
           var serviceMap = {
-            'fo3inxdemphile6yn4ct7iqi': 'https://barcodemicroservopen7iqi.b5e6.rhm-eng-a.openshiftapps.com',
+            'fo3inxdemphile6yn4ct7iqi': 'http://127.0.0.1:8002',
             'r6n4x35cqq6qzcr77t6l2tbb': 'https://imagemicroservicopen2tbb.b5e6.rhm-eng-a.openshiftapps.com',
             '2g7stzwgjcfplrc4tgnf7ipa': 'https://ordermicroservicopen7ipa.b5e6.rhm-eng-a.openshiftapps.com'
           }
